@@ -1,7 +1,20 @@
-body {
-    font-size: 28px;
-  }
- /* navigation bar list **sticky top** */
+body{
+    background-color: rgb(239, 253, 255);
+}
+header {
+    display: flex;
+    background-image: url("Images/purple-gradient.png");
+    padding: 0;
+    width: 490px;
+    height: 100px;
+}
+
+header h1 {
+    display: flex;
+    padding: .2em .7em;
+    text-align: left;
+}
+/* navigation bar list **sticky top** */
 
   ul {
     list-style-type: none;
@@ -73,4 +86,4 @@ body {
     font-size: 16px;
     padding: 16px 32px;
   }
-  
+  /* After profile image */
