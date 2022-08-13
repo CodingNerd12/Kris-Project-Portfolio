@@ -1,8 +1,39 @@
-h1 {
+body {
+    font-size: 28px;
+  }
+
+  #bck-image {
     display: flex;
+    background-color: purple;
+    }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
     text-align: center;
-    color: darkgreen;
-    justify-content: space-around;
-    padding: 4px;
-    
-}
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
