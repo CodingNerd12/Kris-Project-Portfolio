@@ -106,7 +106,7 @@ li a:hover {
 .name {
     text-align: center;
 }
-
+/* end profile image markup */
 
 
 /* After profile image */
@@ -115,12 +115,33 @@ li a:hover {
 
 
 /* Media */
-@media (max-width: 960px){
+@media screen and (max-width: 500px){
     .header .h1 {
         display: inline-block;
         width: 86px;
         height: 15px;
         margin-left: 6px;
     }
-    }
 
+}
+
+
+/* bio */
+.bio-table, caption, table, th, td {
+    border: 6px solid black;
+    border-collapse: collapse;
+    border-style:ridge double inset;
+    text-align: center;
+    font-size: 25px;
+}
+
+.photo {
+    max-width: 20%;
+    padding: 1px 5px;
+    height: 240px;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+}
