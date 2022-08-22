@@ -1,53 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- font awesome kit -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kris' Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/9cbac4b023.js" crossorigin="anonymous"></script>
-    
-    <!-- style here -->
-    <link rel="stylesheet" href="style.css" />
-
-    <!-- title -->
-    <title>Kris' Project Portfolio</title>
-</head>
-
-<body>
-    <header>
-        <h1> Kris' Profile Portfolio </h1>
-
-    </header>
-    <ul>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href='bio.html'>Bio</a></li>
-        <li><a href='exp.html'>Experience</a></li>
-        <li><a href='portfolio.html'>Portfolio</a></li>
-    </ul>
-
-    <h2>Hello!</h2>
-    <div><i class="fa-solid fa-laptop-code"></i>
-        <span id="name">My name is Kris </span>
-        <i class="fa-solid fa-laptop-code"></i>
-    </div>
-    <div class="container">
-        <img src="Images\KrisProfilePic.jpg" alt="Profile Picture" class="image" style="width:100%">
-        <div class="middle">
-            <div class="text">Kris Arndt</div>
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo"><i class="fa-solid fa-laptop-code"></i>KRIS KODES</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-    </div>
-    <!-- After image in middle -->
-    <div> 
-        <h2>Mission Statement</h2> 
-        <p>Lorem ipsum dolor sit amet consectetur a dipisicing elit. Quidem nemo consequuntur tenetur corrupti blanditiis voluptatum sit natus.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo rem exercitationem iusto aperiam accusantium ducimus nesciunt sit, quis fuga, labore dignissimos distinctio aspernatur laudantium quisquam, commodi laboriosam mollitia animi perferendis.</p>
-        <p>In obcaecati natus modi sit sunt, optio autem asperiores totam aspernatur numquam beatae doloremque perspiciatis corporis! Itaque, necessitatibus? Placeat ratione repellat quas molestiae assumenda voluptates numquam quam itaque dicta est!</p>
-        <p>Est omnis maxime facilis voluptatum reiciendis quae corrupti, autem totam esse debitis! Voluptatibus quas animi itaque autem maxime odio quod labore doloribus. Sit repudiandae iusto doloremque aut, corporis cupiditate animi.</p>
-        <p>Asperiores illo aliquid fugit quia maiores culpa rem voluptate modi incidunt labore, sed consectetur quas? In delectus molestias veniam officia minima quos, nam, non dolores, ea adipisci id quaerat aliquam!</p>
-        <p>Ipsam, illo et, odit placeat itaque, non ad recusandae cupiditate provident nihil repellendus tempore tempora velit repudiandae a molestias accusamus temporibus atque. Nemo illum minus quidem eligendi odit ullam veritatis.</p>
-    </div>
-</body>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/about.html" class="navbar__links">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">Projects</a>
+          </li>
+          <li class="navbar__btn"><a href="/" class="button">Learn More</a></li>
+        </ul>
+      </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <div class="main">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>Software Engineer</h1>
+          <h2>IT Expert</h2>
+          <p>See what makes <span style="color:darkgoldenrod">Kris</span> different.</p>
+          <button class="main__btn"><a href="#">Start Experience</a></button>
+        </div>
+        <div class="main__img--container">
+          <img id="main__img" src="images/laptop-and-coffee-for-coding-gift-developer.jpg" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services">
+      <h1>See what the hype is about</h1>
+      <div class="services__container">
+        <div class="services__card">
+          <h2>Experience Bliss</h2>
+          <p>AI Powered technology</p>
+          <button>Learn More</button>
+        </div>
+        <div class="services__card">
+          <h2>Are you Ready?</h2>
+          <p>Take the leap</p>
+          <button>Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          
+      </div>
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="/" id="footer__logo"><i class="fa-solid fa-laptop-code"></i>KRIS KODES</a>
+          </div>
+          <p class="website__rights"></p>
+          <div class="social__icons">
+            <a
+              class="social__icon--link"
+              href="/"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+            
+            <a
+              class="social__icon--link"
+              href="#"
+              target="_blank"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            
+            <a
+              class="social__icon--link"
+              href="/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="app.js"></script>
+  </body>
 </html>
